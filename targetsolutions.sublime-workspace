@@ -1,0 +1,375 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"finai",
+				"Financial"
+			],
+			[
+				"st",
+				"Status"
+			],
+			[
+				"red",
+				"redirect_to"
+			],
+			[
+				"S",
+				"Suburb"
+			],
+			[
+				"Suburbs",
+				"suburbs"
+			],
+			[
+				"sub",
+				"Suburbs"
+			],
+			[
+				"link",
+				"link_to"
+			],
+			[
+				"contact",
+				"contact_path"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README",
+			"settings":
+			{
+				"buffer_size": 2386,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "package",
+		"selected_items":
+		[
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 167.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/davidporter/railsapps/targetsolutions"
+	],
+	"file_history":
+	[
+		"/Users/davidporter/railsapps/tsol/Gemfile",
+		"/Users/davidporter/railsapps/tsol/config/routes.rb",
+		"/Users/davidporter/railsapps/tsol/app/views/layouts/admin.html.erb",
+		"/Users/davidporter/railsapps/tsol/app/views/layouts/_navigation.html.erb",
+		"/Users/davidporter/railsapps/tsol/app/views/layouts/_navigation_links.html.erb",
+		"/Users/davidporter/railsapps/tsol/config/secrets.yml",
+		"/Users/davidporter/railsapps/target/config/secrets.yml",
+		"/Users/davidporter/railsapps/target/config/initializers/devise.rb",
+		"/Users/davidporter/meteorapps/daveplay/client/templates/globals/public-navigation.html",
+		"/Users/davidporter/meteorapps/daveplay/client/templates/globals/header.html",
+		"/Users/davidporter/meteorapps/daveplay/server/publications/template.js",
+		"/Users/davidporter/meteorapps/daveplay/client/helpers/flow-router.js",
+		"/Users/davidporter/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/davidporter/meteorapps/daveplay/client/templates/globals/authenticated-navigation.html",
+		"/Users/davidporter/meteorapps/daveplay/application.html",
+		"/Users/davidporter/railsapps/target/Gemfile",
+		"/Users/davidporter/Documents/test1.html",
+		"/Users/davidporter/meteorapps/daveplay/client/helpers/template.js",
+		"/Users/davidporter/meteorapps/daveplay/client/templates/public/login.html",
+		"/Users/davidporter/meteorapps/daveplay/server/modules/generate-accounts.js",
+		"/Users/davidporter/meteorapps/daveplay/server/modules/startup.js",
+		"/Users/davidporter/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/davidporter/meteorapps/daveplay/server/startup.js",
+		"/Users/davidporter/meteorapps/daveplay/packages.json",
+		"/Users/davidporter/meteorapps/daveplay/README.md",
+		"/Users/davidporter/meteorapps/daveplay/settings-development.json",
+		"/Users/davidporter/meteorapps/daveplay/client/startup.js",
+		"/Users/davidporter/meteorapps/daveplay/collections/collection.js",
+		"/Users/davidporter/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/davidporter/meteorapps/daveplay/client/templates/authenticated/index.html",
+		"/Users/davidporter/meteorapps/daveplay/client/templates/layouts/default.html",
+		"/Users/davidporter/meteorapps/daveplay/both/modules/startup.js",
+		"/Users/davidporter/meteorapps/daveplay/both/startup.js",
+		"/Users/davidporter/Dropbox/Rails_Backups/des.txt",
+		"/Users/davidporter/Dropbox/Rails_Backups/info1.txt",
+		"/Users/davidporter/Dropbox/Rails_Backups/WARVRA App Notes.txt",
+		"/Users/davidporter/Downloads/remember-master/app/controllers/villages_controller.rb",
+		"/Users/davidporter/railsapps/warem/config/routes.rb",
+		"/Users/davidporter/railsapps/warem/app/models/suburb.rb",
+		"/Users/davidporter/railsapps/warem/app/models/village.rb",
+		"/Users/davidporter/railsapps/warem/app/models/village_category.rb",
+		"/Users/davidporter/railsapps/warem/app/controllers/visitors_controller.rb",
+		"/Users/davidporter/railsapps/warem/app/views/layouts/_navigation_links.html.erb",
+		"/Users/davidporter/railsapps/warem/app/views/villages/_form.html.erb",
+		"/Users/davidporter/railsapps/warem/Gemfile",
+		"/Users/davidporter/railsapps/warem/app/assets/stylesheets/application.css.scss",
+		"/Users/davidporter/railsapps/warem/app/assets/javascripts/application.js",
+		"/Users/davidporter/railsapps/warem/app/assets/stylesheets/village_categories.scss",
+		"/Users/davidporter/railsapps/warem/app/controllers/village_categories_controller.rb",
+		"/Users/davidporter/railsapps/warem/app/views/suburbs/index.html.erb",
+		"/Users/davidporter/railsapps/warem/app/views/village_categories/index.html.erb",
+		"/Users/davidporter/railsapps/warem/app/views/statuses/index.html.erb",
+		"/Users/davidporter/railsapps/warem/app/views/village_categories/_form.html.erb",
+		"/Users/davidporter/railsapps/warem/app/views/villages/index.html.erb",
+		"/Users/davidporter/railsapps/warem/app/controllers/villages_controller.rb",
+		"/Users/davidporter/railsapps/warem/app/models/status.rb",
+		"/Users/davidporter/railsapps/warem/db/schema.rb",
+		"/Users/davidporter/Documents/suburbs.csv",
+		"/Users/davidporter/railsapps/warem/app/controllers/suburbs_controller.rb",
+		"/Users/davidporter/railsapps/warem/config/locales/en.yml",
+		"/Users/davidporter/railsapps/warem/config/application.rb",
+		"/Users/davidporter/railsapps/warem/db/migrate/20150604022240_village_categories_villages_new.rb",
+		"/Users/davidporter/railsapps/warem/db/migrate/20150604015252_village_categories_villages.rb",
+		"/Users/davidporter/railsapps/warem/db/migrate/20150603133727_categories_villages.rb",
+		"/Users/davidporter/railsapps/warem/db/migrate/20150603133013_create_villages.rb",
+		"/Users/davidporter/railsapps/warem/app/assets/stylesheets/scaffolds.scss",
+		"/Users/davidporter/railsapps/warem/app/controllers/application_controller.rb",
+		"/Users/davidporter/railsapps/dragonfly/app/views/dragonfly_images/_form.html.erb",
+		"/Users/davidporter/railsapps/targets/app/views/layouts/_navigation.html.erb",
+		"/Users/davidporter/railsapps/targets/app/views/layouts/_navigation_links.html.erb",
+		"/Users/davidporter/railsapps/targets/app/views/categories/_form.html.erb",
+		"/Users/davidporter/railsapps/blog/config/routes.rb",
+		"/Users/davidporter/railsapps/blog/app/views/welcome/index.html.erb",
+		"/Users/davidporter/railsapps/blog/app/controllers/welcome_controller.rb",
+		"/Applications/MAMP/htdocs/lmr/wp-config.php",
+		"/Users/davidporter/Documents/robocopy_example_bell_vista.txt",
+		"/Users/davidporter/meteorapps/marine2/main.js",
+		"/Users/davidporter/Dropbox/link1.txt",
+		"/Applications/MAMP/htdocs/lmr/index.php",
+		"/Applications/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/davidporter/railsapps/learn-rails/config/application.rb",
+		"/Users/davidporter/railsapps/learn-rails/config/boot.rb",
+		"/Users/davidporter/railsapps/learn-rails/config/database.yml",
+		"/Users/davidporter/railsapps/learn-rails/config/environment.rb",
+		"/Users/davidporter/railsapps/learn-rails/config/routes.rb",
+		"/Users/davidporter/railsapps/learn-rails/config/secrets.yml",
+		"/Users/davidporter/meteorapps/difplay/routes.js",
+		"/Users/davidporter/meteorapps/difplay/client/router/config.js",
+		"/Users/davidporter/meteorapps/play3/both/config/adminConfig.coffee",
+		"/Users/davidporter/meteorapps/play3/server/methods/account.coffee",
+		"/Users/davidporter/meteorapps/play3/server/publish/collections.coffee",
+		"/Users/davidporter/meteorapps/play3/server/publish/user.coffee",
+		"/Users/davidporter/meteorapps/play3/server/allow.coffee",
+		"/Users/davidporter/meteorapps/play3/both/config/accounts.coffee",
+		"/Users/davidporter/meteorapps/play3/both/app.coffee",
+		"/Users/davidporter/meteorapps/play3/both/router.coffee",
+		"/Users/davidporter/meteorapps/play3/both/config/_config.coffee",
+		"/Users/davidporter/meteorapps/play3/both/collections/users.coffee",
+		"/Users/davidporter/meteorapps/play3/both/collections/posts.coffee",
+		"/Users/davidporter/meteorapps/play3/both/collections/ports.coffee",
+		"/Users/davidporter/Documents/meteor-notes.txt",
+		"/Users/davidporter/old meteor apps/bvolo_github/bvolo/smart.json",
+		"/Users/davidporter/Dropbox/router.js",
+		"/Users/davidporter/meteorapps/ir-first-steps/collections.js",
+		"/Users/davidporter/meteorapps/smart.json",
+		"/Users/davidporter/meteorapps/daveplay1/client/main.js",
+		"/Users/davidporter/meteorapps/daveplay1/client/stylesheets/style.css",
+		"/Users/davidporter/meteorapps/daveplay1/client/views/posts/posts_list.js",
+		"/Users/davidporter/meteorapps/daveplay1/smart.json",
+		"/Users/davidporter/meteorapps/daveplay1/smart.lock",
+		"/Users/davidporter/meteorapps/daveplay1/client/main.html",
+		"/Users/davidporter/meteorapps/daveplay1/client/views/sample/sample.html",
+		"/Users/davidporter/meteorapps/daveplay1/client/style.css",
+		"/Users/davidporter/meteorapps/daveplay1/client/views/style.css",
+		"/Users/davidporter/meteorapps/microscope/client/views/posts/posts_list.js",
+		"/Users/davidporter/meteorapps/microscope/client/views/posts/post_item.html",
+		"/Users/davidporter/meteorapps/microscope/client/views/posts/posts_list.html",
+		"/Users/davidporter/meteorapps/microscope/client/views/application/layout.html",
+		"/Users/davidporter/meteorapps/microscope/server/fixtures.js",
+		"/Users/davidporter/meteorapps/microscope/client/main.js",
+		"/Users/davidporter/meteorapps/microscope/server/publications.js",
+		"/Users/davidporter/meteorapps/microscope/client/views/posts/post_item.js",
+		"/Users/davidporter/meteorapps/microscope/lib/router.js",
+		"/Users/davidporter/meteorapps/microscope/client/main.html",
+		"/Users/davidporter/meteorapps/microscope/collections/posts.js",
+		"/Users/davidporter/sinapps/kickstarter/gemfile",
+		"/Users/davidporter/meteorapps/microscope/client/stylesheets/style.css",
+		"/Users/davidporter/meteorapps/microscope/client/stylesheets/main.html"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/davidporter/railsapps/compplay"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"authenticate",
+			"Navbar",
+			"user_params",
+			"ADMIN_PASSWORD"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "targetsolutions.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 317.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

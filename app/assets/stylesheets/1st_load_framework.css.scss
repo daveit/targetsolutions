@@ -12,6 +12,11 @@ img {
   font-size: inherit;
   }
 
+.navbar-inverse {
+    background-color: #97310e;
+    border-color: #511c39;
+}
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
@@ -35,10 +40,10 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
+  background-color: rgba(142, 201, 137, 0.28);
   padding-bottom: 80px;
   width: 100%;
-  margin-top: 51px; // accommodate the navbar
+  margin-top: 5px; // accommodate the navbar
   }
 section {
   @extend .row;
