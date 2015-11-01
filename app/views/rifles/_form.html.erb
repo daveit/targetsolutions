@@ -1,0 +1,18 @@
+<%= simple_form_for @rifle, html: { multipart: true } do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :model %>
+    <%= f.input :bore %>
+    <%= f.input :details %>
+    <%= f.input :active %>
+    <%= f.association :make %>
+    <%= f.association :due %>
+    <%= f.input :image %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

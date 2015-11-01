@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+      <p id="notice"><%= notice %></p>
+
+      <h2>Rifle Details:</h2>
+      <hr>
+      <p>
+        <strong>Name:</strong>
+        <%= @rifle.name %>
+      </p>
+
+      <p><%= image_tag @rifle.image.url(:medium) %></p>
+
+      <p>
+        <strong>Model:</strong>
+        <%= @rifle.model %>
+      </p>
+
+      <p>
+        <strong>Bore:</strong>
+        <%= @rifle.bore %>
+      </p>
+
+      <p>
+        <strong>Details:</strong>
+        <%= @rifle.details %>
+      </p>
+
+      <p>
+        <strong>Active:</strong>
+        <%= @rifle.active %>
+      </p>
+
+      <p>
+        <strong>Make:</strong>
+        <%= @rifle.make.name %>
+      </p>
+
+      <p>
+        <strong>Due:</strong>
+        <%= "Due will go here" %>
+      </p>
+
+      <%= link_to 'Edit', edit_rifle_path(@rifle) %> |
+      <%= link_to 'Back', rifles_path %>
+
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>

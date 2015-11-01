@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <p id="notice"><%= notice %></p>
+
+      <h1>Listing Makes</h1>
+
+      <table class="table table-hover table-condensed">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2"></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @makes.each do |make| %>
+            <tr>
+              <td><%= make.name %></td>
+              <td><%= link_to 'Edit', edit_make_path(make), :class => "btn btn-small btn-success" %></td>
+              <td><%= link_to 'Destroy', make, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-xs btn-danger" %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+
+      <br>
+      <hr>
+      <%= link_to 'New Make', new_make_path, :class => "btn btn-small btn-success" %>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>

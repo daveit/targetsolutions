@@ -18,6 +18,7 @@ gem 'high_voltage'
 gem 'pundit'
 gem 'simple_form'
 #gem 'jquery-turbolinks'
+gem 'paperclip', '~> 4.3', '>= 4.3.1'
 
 group :development, :test do
   gem 'byebug'

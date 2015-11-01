@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151023010357) do
+ActiveRecord::Schema.define(version: 20151101094215) do
+
+  create_table "dues", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "makes", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "news", force: :cascade do |t|
     t.string   "title"
@@ -21,6 +33,34 @@ ActiveRecord::Schema.define(version: 20151023010357) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.text     "details"
+    t.string   "author"
+    t.date     "published"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "rifles", force: :cascade do |t|
+    t.string   "name"
+    t.string   "model"
+    t.string   "bore"
+    t.text     "details"
+    t.boolean  "active"
+    t.integer  "make_id"
+    t.integer  "when_due_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.integer  "due_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "rifles", ["due_id"], name: "index_rifles_on_due_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -41,5 +81,11 @@ ActiveRecord::Schema.define(version: 20151023010357) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "when_dues", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

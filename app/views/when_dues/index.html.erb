@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+
+      <p id="notice"><%= notice %></p>
+
+      <h1>Listing When Dues</h1>
+
+      <table class="table table-hover">
+
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2"></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @when_dues.each do |when_due| %>
+            <tr>
+              <td><%= when_due.name %></td>
+              <td><%= link_to 'Edit', edit_when_due_path(when_due), :class => "btn btn-small btn-success" %></td>
+              <td><%= link_to 'Destroy', when_due, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-small btn-danger" %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+
+      <br>
+
+      <%= link_to 'New When due', new_when_due_path, :class => "btn btn-small btn-success" %>
+
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>

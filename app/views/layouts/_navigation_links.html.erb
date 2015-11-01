@@ -1,19 +1,22 @@
 <%# add navigation links to this file %>
 <li><%= link_to 'Home', root_path %></li>
+<li><%= link_to 'News', posts_path %></li>
+<li><%= link_to 'News', news_index_path %></li>
 
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
   <ul class="dropdown-menu" role="menu">
     <li><a href="#">Rifles & Actions</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Barrels</a></li>
+    <li><a href="#">Optics</a></li>
+    <li><a href="#">Stocks</a></li>
+    <li><a href="#">Archery</a></li>
+    <li><a href="#">Triggers & Accessories</a></li>
+    <li><a href="#">Miscellaenous</a></li>
     <li role="separator" class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">One more separated link</a></li>
+    <li><a href="#">Other stuff</a></li>
   </ul>
 </li>
-<li><%= link_to 'News', controller: 'news' %></li>
 
 <li><%= link_to 'About', page_path('about') %></li>
 <li><%= link_to 'Contact', page_path('contact') %></li>
@@ -21,8 +24,23 @@
 <% if user_signed_in? %>
   <li><%= link_to 'Edit account', edit_user_registration_path %></li>
   <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
-<% else %>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Admin <span class="caret"></span></a>
+      <ul class="dropdown-menu" role="menu">
+        <li><%= link_to "Rifles & Actions", rifles_path %></li>
+        <li><a href="#">Barrels</a></li>
+        <li><a href="#">Optics</a></li>
+        <li><a href="#">Stocks</a></li>
+        <li><a href="#">Archery</a></li>
+        <li><a href="#">Triggers & Accessories</a></li>
+        <li><a href="#">Miscellaenous</a></li>
+        <li role="separator" class="divider"></li>
+        <li><%= link_to "Makes", makes_path %></li>
+        <li><%= link_to "When Dues", dues_path %></li>
+      </ul>
+    </li>
 
+<% else %>
   <li><%= link_to 'Sign in', new_user_session_path %></li>
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
 <% end %>
