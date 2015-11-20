@@ -10,7 +10,7 @@ puts 'CREATED ADMIN USER: ' << user.email
 # Environment variables (ENV['...']) can be set in the file config/application.yml.
 # See http://railsapps.github.io/rails-environment-variables.html
 
-user = User.find_or_create_by!(email: "daveporter@me.com") do |user|
+user = User.find_or_create_by!(email: "dave.southperth@gmail.com") do |user|
   user.name = "Dave Porter"
   user.password = "LetDaveIn+179"
   user.password_confirmation = "LetDaveIn+179"
@@ -20,9 +20,9 @@ end
 
 user = User.find_or_create_by!(email: "david@targetsolutions.com.au") do |user|
   user.name = "David Kerr"
-  user.password = "LetDKIn+###"
-  user.password_confirmation = "LetDKIn+###"
-  user.role = 1
+  user.password = "LetDKIn+780"
+  user.password_confirmation = "LetDKIn+780"
+  user.role = 2
   puts "user David Kerr:" << user.email
 end
 
