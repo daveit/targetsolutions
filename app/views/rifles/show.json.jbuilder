@@ -1,1 +1,1 @@
-json.extract! @rifle, :id, :name, :model, :bore, :details, :active, :make_id, :whendue_id, :created_at, :updated_at
+json.extract! @rifle, :id, :name, :model, :bore, :details, :active, :make_id, :due_id, :created_at, :updated_at
