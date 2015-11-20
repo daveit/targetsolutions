@@ -11,7 +11,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151101094215) do
+ActiveRecord::Schema.define(version: 20151115102756) do
+
+  create_table "archeries", force: :cascade do |t|
+    t.string   "name"
+    t.string   "model"
+    t.text     "details"
+    t.boolean  "active"
+    t.integer  "due_id"
+    t.integer  "make_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "archeries", ["due_id"], name: "index_archeries_on_due_id"
+  add_index "archeries", ["make_id"], name: "index_archeries_on_make_id"
+
+  create_table "barrels", force: :cascade do |t|
+    t.string   "name"
+    t.string   "model"
+    t.text     "details"
+    t.string   "twist"
+    t.boolean  "active"
+    t.integer  "due_id"
+    t.integer  "make_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "bore"
+  end
+
+  add_index "barrels", ["due_id"], name: "index_barrels_on_due_id"
+  add_index "barrels", ["make_id"], name: "index_barrels_on_make_id"
 
   create_table "dues", force: :cascade do |t|
     t.string   "name"
@@ -25,6 +63,24 @@ ActiveRecord::Schema.define(version: 20151101094215) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "miscellaneous", force: :cascade do |t|
+    t.string   "name"
+    t.string   "model"
+    t.text     "details"
+    t.boolean  "active"
+    t.integer  "due_id"
+    t.integer  "make_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "miscellaneous", ["due_id"], name: "index_miscellaneous_on_due_id"
+  add_index "miscellaneous", ["make_id"], name: "index_miscellaneous_on_make_id"
+
   create_table "news", force: :cascade do |t|
     t.string   "title"
     t.text     "details"
@@ -33,6 +89,24 @@ ActiveRecord::Schema.define(version: 20151101094215) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "optics", force: :cascade do |t|
+    t.string   "name"
+    t.string   "model"
+    t.text     "details"
+    t.boolean  "active"
+    t.integer  "due_id"
+    t.integer  "make_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "optics", ["due_id"], name: "index_optics_on_due_id"
+  add_index "optics", ["make_id"], name: "index_optics_on_make_id"
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
@@ -61,6 +135,42 @@ ActiveRecord::Schema.define(version: 20151101094215) do
   end
 
   add_index "rifles", ["due_id"], name: "index_rifles_on_due_id"
+
+  create_table "stocks", force: :cascade do |t|
+    t.string   "name"
+    t.string   "model"
+    t.text     "details"
+    t.boolean  "active"
+    t.integer  "due_id"
+    t.integer  "make_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "stocks", ["due_id"], name: "index_stocks_on_due_id"
+  add_index "stocks", ["make_id"], name: "index_stocks_on_make_id"
+
+  create_table "triggers", force: :cascade do |t|
+    t.string   "name"
+    t.string   "model"
+    t.text     "details"
+    t.boolean  "active"
+    t.integer  "due_id"
+    t.integer  "make_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  add_index "triggers", ["due_id"], name: "index_triggers_on_due_id"
+  add_index "triggers", ["make_id"], name: "index_triggers_on_make_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

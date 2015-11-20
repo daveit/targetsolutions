@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @archery.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @archery.model %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @archery.details %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @archery.active %>
+</p>
+
+<p>
+  <strong>Due:</strong>
+  <%= @archery.due %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @archery.make %>
+</p>
+
+<%= link_to 'Edit', edit_archery_path(@archery) %> |
+<%= link_to 'Back', archeries_path %>

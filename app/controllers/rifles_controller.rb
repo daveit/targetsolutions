@@ -10,6 +10,7 @@ class RiflesController < ApplicationController
   # GET /rifles/1
   # GET /rifles/1.json
   def show
+    @details = Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(@rifle.details)
   end
 
   # GET /rifles/new

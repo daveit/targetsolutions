@@ -1,22 +1,30 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-
-      <p id="notice"><%= notice %></p>
-
-      <h2>Rifle Details:</h2>
-      <hr>
-      <p>
-        <strong>Name:</strong>
-        <%= @rifle.name %>
-      </p>
-
-      <p><%= image_tag @rifle.image.url(:medium) %></p>
+    <div class="col-md-12">
+      <h2>
+        <strong>
+          <%= @rifle.name %>
+        </strong>
+      </h2>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-5">
 
       <p>
         <strong>Model:</strong>
         <%= @rifle.model %>
+      </p>
+
+      <p>
+      <strong>Make:</strong>
+      <%= @rifle.make.name %>
+      </p>
+
+      <p>
+        <strong>Availability:</strong>
+        <%= @rifle.due.name %>
       </p>
 
       <p>
@@ -26,28 +34,28 @@
 
       <p>
         <strong>Details:</strong>
-        <%= @rifle.details %>
+        <%= @details.html_safe %>
       </p>
 
-      <p>
-        <strong>Active:</strong>
-        <%= @rifle.active %>
-      </p>
 
-      <p>
-        <strong>Make:</strong>
-        <%= @rifle.make.name %>
-      </p>
-
-      <p>
-        <strong>Due:</strong>
-        <%= "Due will go here" %>
-      </p>
-
-      <%= link_to 'Edit', edit_rifle_path(@rifle) %> |
-      <%= link_to 'Back', rifles_path %>
+      <%= link_to 'Back to Rifles and Actions', rifleproducts_path, :class => "btn btn-success" %>
 
     </div>
-    <div class="col-md-2"></div>
+
+    <div class="col-md-5">
+      <p><%= image_tag @rifle.image.url(:medium) %></p>
+    </div
+
+    <div class="col-md-2">
+      <div class="btn-group-vertical" role="group">
+        <%= link_to "Rifles & Actions", root_path, :class => "btn btn-success" %>
+        <%= link_to "Barrels", root_path, :class => "btn btn-success" %>
+        <%= link_to "Optics", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Stocks", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Archery", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Triggers & Accesories", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Miscellaneous", root_path, :class => "btn btn-small btn-success" %>
+      </div>
+    </div>
   </div>
 </div>

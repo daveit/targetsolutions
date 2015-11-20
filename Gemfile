@@ -19,6 +19,10 @@ gem 'pundit'
 gem 'simple_form'
 #gem 'jquery-turbolinks'
 gem 'paperclip', '~> 4.3', '>= 4.3.1'
+gem 'jquery-turbolinks', '~> 2.1'
+gem 'masonry-rails', '~> 0.2.4'
+gem 'redcarpet'
+gem 'aws-sdk', '~> 2.2', '>= 2.2.1'
 
 group :development, :test do
   gem 'byebug'

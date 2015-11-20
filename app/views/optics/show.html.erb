@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @optic.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @optic.model %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @optic.details %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @optic.active %>
+</p>
+
+<p>
+  <strong>Due:</strong>
+  <%= @optic.due %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @optic.make %>
+</p>
+
+<%= link_to 'Edit', edit_optic_path(@optic) %> |
+<%= link_to 'Back', optics_path %>

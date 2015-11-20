@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @trigger.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @trigger.model %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @trigger.details %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @trigger.active %>
+</p>
+
+<p>
+  <strong>Due:</strong>
+  <%= @trigger.due %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @trigger.make %>
+</p>
+
+<%= link_to 'Edit', edit_trigger_path(@trigger) %> |
+<%= link_to 'Back', triggers_path %>

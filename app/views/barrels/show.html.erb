@@ -1,0 +1,72 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        <strong>
+          <%= @barrel.name %>
+        </strong>
+      </h2>
+    </div>
+  </div>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-5">
+
+      <p id="notice"><%= notice %></p>
+
+      <p>
+        <strong>Name:</strong>
+        <%= @barrel.name %>
+      </p>
+
+      <p>
+        <strong>Model:</strong>
+        <%= @barrel.model %>
+      </p>
+
+      <p>
+        <strong>Make:</strong>
+        <%= @barrel.make.name %>
+      </p>
+
+      <p>
+        <strong>Details:</strong>
+        <%= @details.html_safe %>
+      </p>
+
+      <p>
+        <strong>Twist:</strong>
+        <%= @barrel.twist %>
+      </p>
+
+      <p>
+        <strong>Due:</strong>
+        <%= @barrel.due.name %>
+      </p>
+
+      <%= link_to 'Back to Barrels', barrels_path, :class => "btn btn-success" %>
+    </div>
+
+    <div class="col-md-5">
+
+      <p>
+        <%= image_tag @barrel.image.url(:medium) %>
+      </p>
+
+    </div>
+
+    <div class="col-md-2">
+      <div class="btn-group-vertical" role="group">
+        <%= link_to "Rifles & Actions", root_path, :class => "btn btn-success" %>
+        <%= link_to "Barrels", root_path, :class => "btn btn-success" %>
+        <%= link_to "Optics", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Stocks", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Archery", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Triggers & Accesories", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Miscellaneous", root_path, :class => "btn btn-small btn-success" %>
+      </div>
+    </div>
+
+</div>

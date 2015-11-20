@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
-  resources :rifles
-  resources :rifles
-  resources :rifles
+  resources :miscellaneous
+  resources :triggers
+  resources :archeries
+  resources :stocks
+  resources :optics
+  resources :barrels
+  resources :rifleproducts
+
+  resources :riflesv
+  #get 'riflesv', to: riflesv#index
   resources :dues
   resources :rifles
   resources :when_dues
