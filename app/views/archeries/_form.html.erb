@@ -1,16 +1,18 @@
-<%= simple_form_for(@archery) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for @archery, html: {multipart: true} do |f| %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :model %>
-    <%= f.input :details %>
-    <%= f.input :active %>
-    <%= f.association :due %>
-    <%= f.association :make %>
-  </div>
+    <%= f.error_notification %>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+    <div class="form-inputs">
+      <%= f.input :name %>
+      <%= f.input :model %>
+      <%= f.input :details %>
+      <%= f.input :active %>
+      <%= f.association :due %>
+      <%= f.association :make %>
+      <%= f.input :image %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit %>
+    </div>
 <% end %>

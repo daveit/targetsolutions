@@ -69,6 +69,6 @@ class MiscellaneousController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def miscellaneou_params
-      params.require(:miscellaneou).permit(:name, :model, :details, :active, :due_id, :make_id)
+      params.require(:miscellaneou).permit(:name, :model, :details, :active, :due_id, :make_id, :image)
     end
 end
