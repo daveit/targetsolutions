@@ -28,7 +28,7 @@ class DuesController < ApplicationController
 
     respond_to do |format|
       if @due.save
-        format.html { redirect_to @due, notice: 'Due was successfully created.' }
+        format.html { redirect_to dues_path, notice: 'Due was successfully created.' }
         format.json { render :show, status: :created, location: @due }
       else
         format.html { render :new }

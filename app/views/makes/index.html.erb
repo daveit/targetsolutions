@@ -1,11 +1,10 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
+    <div class='col-md-offset-2 col-md-6 content'>
       <p id="notice"><%= notice %></p>
 
       <h1>Listing Makes</h1>
-
+      <%= link_to 'New Make', new_make_path, :class => "btn btn-small btn-success" %>
       <table class="table table-hover table-condensed">
         <thead>
         <tr>
@@ -29,6 +28,5 @@
       <hr>
       <%= link_to 'New Make', new_make_path, :class => "btn btn-small btn-success" %>
     </div>
-    <div class="col-md-3"></div>
   </div>
 </div>

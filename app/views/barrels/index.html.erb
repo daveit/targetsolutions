@@ -30,7 +30,7 @@
               <td><%= barrel.bore %></td>
               <td><%= barrel.due.name %></td>
               <td><%= image_tag barrel.image.url(:thumb) %></td>
-              <td><%= link_to 'Show', barrel, :class => "btn btn-small btn-info" %></td>
+              <td><%= link_to 'Show', barrel %></td>
               <td><%= link_to 'Edit', edit_barrel_path(barrel), :class => "btn btn-small btn-success" %></td>
               <td><%= link_to 'Destroy', barrel, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-small btn-danger" %></td>
             </tr>
@@ -41,6 +41,7 @@
       <br>
 
       <%= link_to 'New Barrel', new_barrel_path, :class => "btn btn-small btn-success" %>
+
     </div>
   </div>
 </div>

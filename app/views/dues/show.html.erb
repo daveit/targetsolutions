@@ -1,9 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-6 content'>
 
-<p>
-  <strong>Name:</strong>
-  <%= @due.name %>
-</p>
+      <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_due_path(@due) %> |
-<%= link_to 'Back', dues_path %>
+      <h2>Listing Dues</h2>
+
+      <p>
+        <strong>Name:</strong>
+        <%= @due.name %>
+      </p>
+
+      <%= link_to 'Edit', edit_due_path(@due) %>
+      <%= link_to 'Back', dues_path %>
+
+    </div>
+  </div>
+</div>

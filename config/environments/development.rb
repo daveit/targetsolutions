@@ -43,6 +43,17 @@ Rails.application.configure do
   # Send email in development mode?
   config.action_mailer.perform_deliveries = true
 
+  # config/environments/production.rb
+  config.paperclip_defaults = {
+      :storage => :s3,
+      :s3_host_name => 's3-ap-southeast-2.amazonaws.com',
+      :s3_credentials => {
+          :bucket => ENV['S3_BUCKET_NAME'],
+          :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+          :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+      }
+  }
+
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true

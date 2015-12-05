@@ -1,15 +1,12 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
+    <div class='col-md-offset-2 col-md-6 content'>
       <h1>Edit Make</h1>
 
       <%= render 'form' %>
-
-      <%= link_to 'Show', @make %> |
-      <%= link_to 'Back', makes_path %>
+      <br>
+      <%= link_to 'Back', makes_path, :class => "btn btn-small btn-success" %>
 
     </div>
-    <div class="col-md-3"></div>
   </div>
 </div>
