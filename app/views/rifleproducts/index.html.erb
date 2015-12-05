@@ -10,8 +10,8 @@
           <% @rifles.each do |rifle| %>
               <li class="list-group-item clearfix">
                 <h3 class="pull-right"><small class="text-uppercase">Model: <%= rifle.model %></small></h3>
-                <h2 class="h3"><%= link_to rifle.name, rifle %><small>Make: <%= rifle.make.name %></small></h2>
-                <h3>Due: <%= rifle.due.name %></h3>
+                <h2 class="h2"><%= link_to rifle.name, rifle %><small> (<%= rifle.make.name %>)</small></h2>
+                <h4 class="h3">Due: <%= rifle.due.name %></h4>
                 <h4 class="pull-right">Bore: <%= rifle.bore %></h4>
               </li>
           <% end %>
