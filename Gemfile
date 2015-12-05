@@ -24,6 +24,7 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'redcarpet'
 # gem 'aws-sdk', '~> 2.2', '>= 2.2.1'
 gem 'aws-sdk', '< 2.0'
+gem 'rails_db'
 
 group :development, :test do
   gem 'byebug'
