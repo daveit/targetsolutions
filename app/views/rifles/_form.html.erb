@@ -3,12 +3,14 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
+    <%= f.association :make %>
     <%= f.input :model %>
-    <%= f.input :bore %>
+    <%= f.input :style %>
+    <%= f.input :bore, label: 'Calibre' %>
+    <%= f.input :price %>
+    <%= f.association :due %>
     <%= f.input :details %>
     <%= f.input :active %>
-    <%= f.association :make %>
-    <%= f.association :due %>
     <%= f.input :image %>
   </div>
 

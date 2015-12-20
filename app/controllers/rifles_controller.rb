@@ -70,6 +70,6 @@ class RiflesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rifle_params
-      params.require(:rifle).permit(:name, :model, :bore, :details, :active, :make_id, :due_id, :image)
+      params.require(:rifle).permit(:name, :model, :bore, :details, :active, :make_id, :due_id, :image, :price, :style)
     end
 end
