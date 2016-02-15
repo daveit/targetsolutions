@@ -11,7 +11,8 @@
               <li class="list-group-item clearfix">
                 <h3 class="pull-right"><small>Model: </small><small class="text-uppercase"><%= rifle.model %></small></h3>
                 <h2 class="h2"><%= link_to rifle.name, rifle %><small> (<%= rifle.make.name %>)</small></h2>
-                <h3 class="pull-right"><small>Bore: </small><small class="text-uppercase"><%= rifle.bore %></small></h3>
+                <h3 class="pull-right"><small>Calibre </small><small class="text-uppercase"><%= rifle.bore %></small></h3>
+                <!--<h3 class="pull-right"><small>Price </small><small class="text-uppercase"><%= number_to_currency(rifle.price) %></small></h3>-->
                 <h4 class="h3">Due: <%= rifle.due.name %></h4>
                 <p><%= link_to 'Full Details', rifle, :class => "btn btn-sm btn-default" %></p>
               </li>

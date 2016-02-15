@@ -70,6 +70,6 @@ class BarrelsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def barrel_params
-      params.require(:barrel).permit(:name, :model, :details, :twist, :due_id, :make_id, :image, :bore)
+      params.require(:barrel).permit(:name, :model, :details, :twist, :due_id, :make_id, :image, :bore, :profile, :material, :qty, :details, :active)
     end
 end

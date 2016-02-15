@@ -30,8 +30,8 @@
               <td><%= rifle.style %></td>
               <td><%= rifle.bore %></td>
               <td><%= number_to_currency(rifle.price) %></td>
-              <td><%= rifle.active %></td>
               <td><%= rifle.due.name %></td>
+              <td><%= rifle.active %></td>
               <td><%= link_to 'Show', rifle, :class => "btn btn-small btn-info" %></td>
               <td><%= link_to 'Edit', edit_rifle_path(rifle), :class => "btn btn-small btn-success" %></td>
               <td><%= link_to 'Delete', rifle, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-xs btn-danger" %></td>

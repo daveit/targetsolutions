@@ -4,13 +4,17 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
-    <%= f.input :model %>
-    <%= f.input :details %>
-    <%= f.input :twist %>
-    <%= f.input :bore %>
-    <%= f.association :due %>
     <%= f.association :make %>
+    <%= f.input :bore %>
+    <%= f.input :twist %>
+    <%= f.input :profile %>
+    <%= f.input :material %>
+    <%= f.input :qty %>
+    <%= f.input :price %>
+    <%= f.input :details %>
+    <%= f.association :due %>
     <%= f.input :image %>
+    <%= f.input :active %>
   </div>
 
   <div class="form-actions">

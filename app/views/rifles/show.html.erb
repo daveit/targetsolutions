@@ -28,12 +28,16 @@
       </p>
 
       <p>
-        <strong>Bore:</strong>
+        <strong>Calibre:</strong>
         <%= @rifle.bore %>
       </p>
 
       <p>
-        <strong>Details:</strong>
+        <strong>Price:</strong>
+        <%= number_to_currency(@rifle.price) %>
+      </p>
+
+      <p>
         <%= @details.html_safe %>
       </p>
 
