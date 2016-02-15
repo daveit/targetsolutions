@@ -69,6 +69,6 @@ class OpticsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def optic_params
-      params.require(:optic).permit(:name, :model, :details, :active, :due_id, :make_id, :image)
+      params.require(:optic).permit(:name, :model, :details, :active, :due_id, :make_id, :image, :mag, :price)
     end
 end
