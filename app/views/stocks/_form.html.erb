@@ -4,11 +4,14 @@
 
     <div class="form-inputs">
       <%= f.input :name %>
+      <%= f.association :make %>
       <%= f.input :model %>
+      <%= f.input :inlet %>
+      <%= f.input :colour %>
+      <%= f.input :price %>
       <%= f.input :details %>
       <%= f.input :active %>
       <%= f.association :due %>
-      <%= f.association :make %>
       <%= f.input :image %>
     </div>
 

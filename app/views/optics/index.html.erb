@@ -24,11 +24,11 @@
         <% @optics.each do |optic| %>
             <tr>
               <td><%= optic.name %></td>
-              <td><%= optic.make %></td>
+              <td><%= optic.make.name %></td>
               <td><%= optic.model %></td>
               <td><%= optic.mag %></td>
-              <td><%= optic.price %></td>
-              <td><%= optic.due %></td>
+              <td><%= number_to_currency(optic.price) %></td>
+              <td><%= optic.due.name %></td>
               <td><%= optic.active %></td>
               <td><%= link_to 'Show', optic, :class => "btn btn-small btn-info" %></td>
               <td><%= link_to 'Edit', edit_optic_path(optic), :class => "btn btn-small btn-success" %></td>

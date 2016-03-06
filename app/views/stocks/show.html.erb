@@ -1,34 +1,78 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @stock.name %>
-</p>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        <strong>
+          <%= @stock.name %>
+        </strong>
+      </h2>
+    </div>
+  </div>
 
-<p>
-  <strong>Model:</strong>
-  <%= @stock.model %>
-</p>
+  <hr>
+  <div class="row">
+    <div class="col-md-5">
 
-<p>
-  <strong>Details:</strong>
-  <%= @stock.details %>
-</p>
 
-<p>
-  <strong>Active:</strong>
-  <%= @stock.active %>
-</p>
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Due:</strong>
-  <%= @stock.due %>
-</p>
+      <p>
+        <strong>Model:</strong>
+        <%= @stock.model %>
+      </p>
+      <p>
+        <strong>Inlet:</strong>
+        <%= @stock.inlet %>
+      </p>
+      <p>
+        <strong>Colour:</strong>
+        <%= @stock.colour %>
+      </p>
+      <p>
+        <strong>Price:</strong>
+        <%= @stock.price %>
+      </p>
 
-<p>
-  <strong>Make:</strong>
-  <%= @stock.make %>
-</p>
+      <p>
+        <strong>Details:</strong>
+        <%= @stock.details %>
+      </p>
 
-<%= link_to 'Edit', edit_stock_path(@stock) %> |
-<%= link_to 'Back', stocks_path %>
+      <p>
+        <strong>Active:</strong>
+        <%= @stock.active %>
+      </p>
+
+      <p>
+        <strong>Due:</strong>
+        <%= @stock.due.name %>
+      </p>
+
+      <p>
+        <strong>Make:</strong>
+        <%= @stock.make.name %>
+      </p>
+
+      <%= link_to 'Edit', edit_stock_path(@stock) %> |
+      <%= link_to 'Back', stocks_path %>
+    </div>
+
+    <div class="col-md-5">
+      <p><%= image_tag @stock.image.url(:medium) %></p>
+    </div
+
+    <div class="col-md-2">
+      <div class="btn-group-vertical" role="group">
+        <%= link_to "Rifles & Actions", root_path, :class => "btn btn-success" %>
+        <%= link_to "Barrels", root_path, :class => "btn btn-success" %>
+        <%= link_to "Optics", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Stocks", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Archery", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Triggers & Accesories", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Miscellaneous", root_path, :class => "btn btn-small btn-success" %>
+      </div>
+    </div>
+
+  </div>
+</div>

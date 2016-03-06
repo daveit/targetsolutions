@@ -11,10 +11,10 @@
         <thead>
         <tr>
           <th>Name</th>
+          <th>Make</th>
           <th>Model</th>
           <th>Active</th>
           <th>Due</th>
-          <th>Make</th>
           <th colspan="3"></th>
         </tr>
         </thead>
@@ -23,10 +23,10 @@
         <% @stocks.each do |stock| %>
             <tr>
               <td><%= stock.name %></td>
+              <td><%= stock.make.name %></td>
               <td><%= stock.model %></td>
               <td><%= stock.active %></td>
-              <td><%= stock.due %></td>
-              <td><%= stock.make %></td>
+              <td><%= stock.due.name %></td>
               <td><%= link_to 'Show', stock, :class => "btn btn-small btn-primary" %></td>
               <td><%= link_to 'Edit', edit_stock_path(stock), :class => "btn btn-small btn-success" %></td>
               <td><%= link_to 'Destroy', stock, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-small btn-danger" %></td>

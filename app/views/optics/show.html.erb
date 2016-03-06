@@ -1,34 +1,70 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @optic.name %>
-</p>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        <strong>
+          <%= @optic.name %>
+        </strong>
+      </h2>
+    </div>
+  </div>
 
-<p>
-  <strong>Model:</strong>
-  <%= @optic.model %>
-</p>
+  <hr>
 
-<p>
-  <strong>Details:</strong>
-  <%= @optic.details %>
-</p>
+  <div class="row">
 
-<p>
-  <strong>Active:</strong>
-  <%= @optic.active %>
-</p>
+    <div class="col-md-5">
 
-<p>
-  <strong>Due:</strong>
-  <%= @optic.due %>
-</p>
+      <p id="notice"><%= notice %></p>
+      <p>
+        <strong>Model:</strong>
+        <%= @optic.model %>
+      </p>
 
-<p>
-  <strong>Make:</strong>
-  <%= @optic.make %>
-</p>
+      <p>
+        <strong>Details:</strong>
+        <%= @optic.details %>
+      </p>
 
-<%= link_to 'Edit', edit_optic_path(@optic) %> |
-<%= link_to 'Back', optics_path %>
+      <p>
+        <strong>Active:</strong>
+        <%= @optic.active %>
+      </p>
+
+      <p>
+        <strong>Due:</strong>
+        <%= @optic.due.name %>
+      </p>
+
+      <p>
+        <strong>Make:</strong>
+        <%= @optic.make.name %>
+      </p>
+      <%= link_to 'Back', optics_path %>
+
+    </div>
+
+
+    <div class="col-md-5">
+
+      <p>
+        <%= image_tag @optic.image.url(:medium) %>
+      </p>
+
+    </div>
+
+    <div class="col-md-2">
+      <div class="btn-group-vertical" role="group">
+        <%= link_to "Rifles & Actions", root_path, :class => "btn btn-success" %>
+        <%= link_to "Barrels", root_path, :class => "btn btn-success" %>
+        <%= link_to "Optics", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Stocks", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Archery", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Triggers & Accesories", root_path, :class => "btn btn-small btn-success" %>
+        <%= link_to "Miscellaneous", root_path, :class => "btn btn-small btn-success" %>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -13,7 +13,7 @@
           <th>Make</th>
           <th>Bore</th>
           <th>Twist</th>
-          <th>Profile</th>
+          <th>Price</th>
           <th>Qty</th>
           <th>Due</th>
           <th colspan="3"></th>
@@ -27,7 +27,7 @@
               <td><%= barrel.make.name %></td>
               <td><%= barrel.bore %></td>
               <td><%= barrel.twist %></td>
-              <td><%= barrel.Profile %></td>
+              <td><%= number_to_currency(barrel.price) %></td>
               <td><%= barrel.qty %></td>
               <td><%= barrel.due.name %></td>
               <td><%= image_tag barrel.image.url(:thumb) %></td>
