@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160305061657) do
+ActiveRecord::Schema.define(version: 20160306050123) do
 
   create_table "archeries", force: :cascade do |t|
     t.string   "name"
@@ -178,6 +178,9 @@ ActiveRecord::Schema.define(version: 20160305061657) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "fit"
+    t.integer  "quantity"
+    t.decimal  "price"
   end
 
   add_index "triggers", ["due_id"], name: "index_triggers_on_due_id"
