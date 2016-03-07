@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :preloveds
+  resources :reloadings
   resources :miscellaneous
   resources :triggers
   resources :archeries

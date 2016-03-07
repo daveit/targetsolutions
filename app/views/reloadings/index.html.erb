@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Reloadings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Model</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Details</th>
+      <th>Active</th>
+      <th>Due</th>
+      <th>Make</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reloadings.each do |reloading| %>
+      <tr>
+        <td><%= reloading.name %></td>
+        <td><%= reloading.model %></td>
+        <td><%= reloading.quantity %></td>
+        <td><%= reloading.price %></td>
+        <td><%= reloading.details %></td>
+        <td><%= reloading.active %></td>
+        <td><%= reloading.due %></td>
+        <td><%= reloading.make %></td>
+        <td><%= link_to 'Show', reloading %></td>
+        <td><%= link_to 'Edit', edit_reloading_path(reloading) %></td>
+        <td><%= link_to 'Destroy', reloading, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reloading', new_reloading_path %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @reloading.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @reloading.model %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @reloading.quantity %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @reloading.price %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @reloading.details %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @reloading.active %>
+</p>
+
+<p>
+  <strong>Due:</strong>
+  <%= @reloading.due %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @reloading.make %>
+</p>
+
+<%= link_to 'Edit', edit_reloading_path(@reloading) %> |
+<%= link_to 'Back', reloadings_path %>

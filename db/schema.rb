@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160306050123) do
+ActiveRecord::Schema.define(version: 20160307074957) do
 
   create_table "archeries", force: :cascade do |t|
     t.string   "name"
@@ -122,6 +122,35 @@ ActiveRecord::Schema.define(version: 20160306050123) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "preloveds", force: :cascade do |t|
+    t.string   "name"
+    t.string   "model"
+    t.decimal  "price"
+    t.text     "details"
+    t.boolean  "active"
+    t.integer  "make_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "preloveds", ["make_id"], name: "index_preloveds_on_make_id"
+
+  create_table "reloadings", force: :cascade do |t|
+    t.string   "name"
+    t.string   "model"
+    t.integer  "quantity"
+    t.decimal  "price"
+    t.text     "details"
+    t.boolean  "active"
+    t.integer  "due_id"
+    t.integer  "make_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "reloadings", ["due_id"], name: "index_reloadings_on_due_id"
+  add_index "reloadings", ["make_id"], name: "index_reloadings_on_make_id"
 
   create_table "rifles", force: :cascade do |t|
     t.string   "name"

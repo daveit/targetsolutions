@@ -54,17 +54,9 @@
 
     </div>
 
-    <div class="col-md-2">
-      <div class="btn-group-vertical" role="group">
-        <%= link_to "Rifles & Actions", root_path, :class => "btn btn-success" %>
-        <%= link_to "Barrels", root_path, :class => "btn btn-success" %>
-        <%= link_to "Optics", root_path, :class => "btn btn-small btn-success" %>
-        <%= link_to "Stocks", root_path, :class => "btn btn-small btn-success" %>
-        <%= link_to "Archery", root_path, :class => "btn btn-small btn-success" %>
-        <%= link_to "Triggers & Accesories", root_path, :class => "btn btn-small btn-success" %>
-        <%= link_to "Miscellaneous", root_path, :class => "btn btn-small btn-success" %>
-      </div>
-    </div>
+    <%= render 'layouts/sidebar' %>
+
+
   </div>
 
 </div>

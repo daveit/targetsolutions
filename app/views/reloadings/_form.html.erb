@@ -1,0 +1,18 @@
+<%= simple_form_for(@reloading) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :model %>
+    <%= f.input :quantity %>
+    <%= f.input :price %>
+    <%= f.input :details %>
+    <%= f.input :active %>
+    <%= f.association :due %>
+    <%= f.association :make %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

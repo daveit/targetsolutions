@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @preloved.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @preloved.model %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @preloved.price %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @preloved.details %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @preloved.active %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @preloved.make %>
+</p>
+
+<%= link_to 'Edit', edit_preloved_path(@preloved) %> |
+<%= link_to 'Back', preloveds_path %>
