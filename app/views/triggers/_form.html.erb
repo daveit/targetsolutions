@@ -3,11 +3,15 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
+    <%= f.association :make %>
     <%= f.input :model %>
+    <%= f.input :fit %>
+    <%= f.input :quantity %>
+    <%= f.input :price %>
     <%= f.input :details %>
     <%= f.input :active %>
     <%= f.association :due %>
-    <%= f.association :make %>
+    <%= f.input :image %>
   </div>
 
   <div class="form-actions">

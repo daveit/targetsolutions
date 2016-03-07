@@ -23,10 +23,10 @@
         <% @triggers.each do |trigger| %>
             <tr>
               <td><%= trigger.name %></td>
+              <td><%= trigger.make.name %></td>
               <td><%= trigger.model %></td>
               <td><%= trigger.active %></td>
-              <td><%= trigger.due %></td>
-              <td><%= trigger.make %></td>
+              <td><%= trigger.due.name %></td>
               <td><%= image_tag trigger.image.url(:thumb) %></td>
               <td><%= link_to 'Show', trigger, :class => "btn btn-small btn-info" %></td>
               <td><%= link_to 'Edit', edit_trigger_path(trigger), :class => "btn btn-small btn-success" %></td>

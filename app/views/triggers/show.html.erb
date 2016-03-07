@@ -1,34 +1,75 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @trigger.name %>
-</p>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        <strong>
+          <%= @trigger.name %>
+        </strong>
+      </h2>
+    </div>
+  </div>
 
-<p>
-  <strong>Model:</strong>
-  <%= @trigger.model %>
-</p>
+  <hr>
 
-<p>
-  <strong>Details:</strong>
-  <%= @trigger.details %>
-</p>
+  <div class="row">
+    <div class="col-md-5">
 
-<p>
-  <strong>Active:</strong>
-  <%= @trigger.active %>
-</p>
 
-<p>
-  <strong>Due:</strong>
-  <%= @trigger.due %>
-</p>
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Make:</strong>
-  <%= @trigger.make %>
-</p>
+      <p>
+        <strong>Name:</strong>
+      </p>
 
-<%= link_to 'Edit', edit_trigger_path(@trigger) %> |
-<%= link_to 'Back', triggers_path %>
+      <p>
+        <strong>Make:</strong>
+        <%= @trigger.make.name %>
+      </p>
+
+      <p>
+        <strong>Model:</strong>
+        <%= @trigger.model %>
+      </p>
+
+      <p>
+        <strong>Fit:</strong>
+        <%= @trigger.fit %>
+      </p>
+
+      <p>
+        <strong>Quantity:</strong>
+        <%= @trigger.quantity %>
+      </p>
+
+      <p>
+        <strong>Price:</strong>
+        <%= number_to_currency(@trigger.price) %>
+      </p>
+
+      <p>
+        <strong>Details:</strong>
+        <%= @trigger.details %>
+      </p>
+
+      <p>
+        <strong>Active:</strong>
+        <%= @trigger.active %>
+      </p>
+
+      <p>
+        <strong>Due:</strong>
+        <%= @trigger.due.name %>
+      </p>
+      <%= link_to 'Edit', edit_trigger_path(@trigger) %> |
+      <%= link_to 'Back', triggers_path %>
+    </div>
+
+    <div class="col-md-5">
+      <p><%= image_tag @trigger.image.url(:medium) %></p>
+    </div>
+
+    <%= render 'layouts/sidebar' %>
+
+  </div>
+</div>
