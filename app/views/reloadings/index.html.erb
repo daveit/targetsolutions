@@ -32,7 +32,7 @@
               <td><%= reloading.active %></td>
               <td><%= reloading.due %></td>
               <td><%= link_to 'Show', reloading, :class => "btn btn-small btn-info" %></td>
-              <td><%= link_to 'Edit', edit_reloading_path(optic), :class => "btn btn-small btn-success" %></td>
+              <td><%= link_to 'Edit', edit_reloading_path(reloading), :class => "btn btn-small btn-success" %></td>
               <td><%= link_to 'Destroy', reloading, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-small btn-success" %></td>
             </tr>
         <% end %>
