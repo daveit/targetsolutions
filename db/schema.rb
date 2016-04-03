@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160307074957) do
+ActiveRecord::Schema.define(version: 20160403090828) do
 
   create_table "archeries", force: :cascade do |t|
     t.string   "name"
@@ -130,8 +130,12 @@ ActiveRecord::Schema.define(version: 20160307074957) do
     t.text     "details"
     t.boolean  "active"
     t.integer  "make_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "preloveds", ["make_id"], name: "index_preloveds_on_make_id"
@@ -145,8 +149,12 @@ ActiveRecord::Schema.define(version: 20160307074957) do
     t.boolean  "active"
     t.integer  "due_id"
     t.integer  "make_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "reloadings", ["due_id"], name: "index_reloadings_on_due_id"

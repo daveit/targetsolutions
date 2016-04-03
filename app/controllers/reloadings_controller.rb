@@ -69,6 +69,6 @@ class ReloadingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reloading_params
-      params.require(:reloading).permit(:name, :model, :quantity, :price, :details, :active, :due_id, :make_id)
+      params.require(:reloading).permit(:name, :model, :quantity, :price, :details, :active, :due_id, :make_id, :image)
     end
 end

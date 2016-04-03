@@ -1,44 +1,63 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @reloading.name %>
-</p>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        <strong>
+          <%= @reloading.name %>
+        </strong>
+      </h2>
+    </div>
+  </div>
 
-<p>
-  <strong>Model:</strong>
-  <%= @reloading.model %>
-</p>
+  <hr>
 
-<p>
-  <strong>Quantity:</strong>
-  <%= @reloading.quantity %>
-</p>
+  <div class="row">
 
-<p>
-  <strong>Price:</strong>
-  <%= @reloading.price %>
-</p>
+    <div class="col-md-5">
 
-<p>
-  <strong>Details:</strong>
-  <%= @reloading.details %>
-</p>
+      <p id="notice"><%= notice %></p>
+      <p>
+        <strong>Model:</strong>
+        <%= @reloading.model %>
+      </p>
+      <p>
+        <strong>Make:</strong>
+        <%= @reloading.make.name %>
+      </p>
 
-<p>
-  <strong>Active:</strong>
-  <%= @reloading.active %>
-</p>
+      <p>
+        <strong>Details:</strong>
+        <%= @reloading.details %>
+      </p>
 
-<p>
-  <strong>Due:</strong>
-  <%= @reloading.due %>
-</p>
+      <p>
+        <strong>Active:</strong>
+        <%= @reloading.active %>
+      </p>
 
-<p>
-  <strong>Make:</strong>
-  <%= @reloading.make %>
-</p>
+      <p>
+        <strong>Due:</strong>
+        <%= @reloading.due.name %>
+      </p>
 
-<%= link_to 'Edit', edit_reloading_path(@reloading) %> |
-<%= link_to 'Back', reloadings_path %>
+
+      <%= link_to 'Back', reloadings_path %>
+
+    </div>
+
+
+    <div class="col-md-5">
+
+      <p>
+        <%= image_tag @reloading.image.url(:medium) %>
+      </p>
+
+    </div>
+
+    <%= render 'layouts/sidebar' %>
+
+
+  </div>
+
+</div>

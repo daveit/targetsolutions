@@ -10,8 +10,8 @@
         <thead>
         <tr>
           <th>Name</th>
-          <th>Make</th>
           <th>Model</th>
+          <th>Make</th>
           <th>Mag</th>
           <th>Price</th>
           <th>Due</th>
@@ -24,8 +24,8 @@
         <% @optics.each do |optic| %>
             <tr>
               <td><%= optic.name %></td>
-              <td><%= optic.make.name %></td>
               <td><%= optic.model %></td>
+              <td><%= optic.make.name %></td>
               <td><%= optic.mag %></td>
               <td><%= number_to_currency(optic.price) %></td>
               <td><%= optic.due.name %></td>

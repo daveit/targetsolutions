@@ -1,18 +1,21 @@
-<%= simple_form_for(@reloading) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for @reloading, html: {multipart: true} do |f| %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :model %>
-    <%= f.input :quantity %>
-    <%= f.input :price %>
-    <%= f.input :details %>
-    <%= f.input :active %>
-    <%= f.association :due %>
-    <%= f.association :make %>
-  </div>
+    <%= f.error_notification %>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+    <div class="form-inputs">
+      <%= f.input :name %>
+      <%= f.input :model %>
+      <%= f.association :make %>
+      <%= f.input :quantity %>
+      <%= f.input :price %>
+      <%= f.input :details %>
+      <%= f.association :due %>
+      <%= f.input :active %>
+      <%= f.input :image %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, :class => "btn btn-small btn-success" %>
+    </div>
+
 <% end %>
