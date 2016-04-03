@@ -28,7 +28,7 @@
               <td><%= reloading.model %></td>
               <td><%= reloading.make.name %></td>
               <td><%= reloading.quantity %></td>
-              <td><%= reloading.price %></td>
+              <td><%= number_to_currency(reloading.price) %></td>
               <td><%= reloading.active %></td>
               <td><%= reloading.due.name %></td>
               <td><%= link_to 'Show', reloading, :class => "btn btn-small btn-info" %></td>
