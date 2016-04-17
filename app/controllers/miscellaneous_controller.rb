@@ -28,7 +28,7 @@ class MiscellaneousController < ApplicationController
 
     respond_to do |format|
       if @miscellaneou.save
-        format.html { redirect_to @miscellaneou, notice: 'Miscellaneou was successfully created.' }
+        format.html { redirect_to @miscellaneou, notice: 'Accessory was successfully created.' }
         format.json { render :show, status: :created, location: @miscellaneou }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class MiscellaneousController < ApplicationController
   def update
     respond_to do |format|
       if @miscellaneou.update(miscellaneou_params)
-        format.html { redirect_to @miscellaneou, notice: 'Miscellaneou was successfully updated.' }
+        format.html { redirect_to @miscellaneou, notice: 'Accessory was successfully updated.' }
         format.json { render :show, status: :ok, location: @miscellaneou }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class MiscellaneousController < ApplicationController
   def destroy
     @miscellaneou.destroy
     respond_to do |format|
-      format.html { redirect_to miscellaneous_url, notice: 'Miscellaneou was successfully destroyed.' }
+      format.html { redirect_to miscellaneous_url, notice: 'Accessory was successfully deleted.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,6 @@ class MiscellaneousController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def miscellaneou_params
-      params.require(:miscellaneou).permit(:name, :model, :details, :active, :due_id, :make_id, :image)
+      params.require(:miscellaneou).permit(:name, :model, :details, :active, :due_id, :make_id, :image, :qty, :price)
     end
 end

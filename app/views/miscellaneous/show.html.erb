@@ -1,34 +1,64 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @miscellaneou.name %>
-</p>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        <strong>
+          <%= @miscellaneou.name %>
+        </strong>
+      </h2>
+    </div>
+  </div>
 
-<p>
-  <strong>Model:</strong>
-  <%= @miscellaneou.model %>
-</p>
+  <hr>
 
-<p>
-  <strong>Details:</strong>
-  <%= @miscellaneou.details %>
-</p>
+  <div class="row">
+    <div class="col-md-5">
 
-<p>
-  <strong>Active:</strong>
-  <%= @miscellaneou.active %>
-</p>
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Due:</strong>
-  <%= @miscellaneou.due %>
-</p>
+      <p>
+        <strong>Model:</strong>
+        <%= @miscellaneou.model %>
+      </p>
 
-<p>
-  <strong>Make:</strong>
-  <%= @miscellaneou.make %>
-</p>
+      <p>
+        <strong>Make:</strong>
+        <%= @miscellaneou.make.name %>
+      </p>
 
-<%= link_to 'Edit', edit_miscellaneou_path(@miscellaneou) %> |
-<%= link_to 'Back', miscellaneous_path %>
+      <p>
+        <strong>Details:</strong>
+        <%= @miscellaneou.details %>
+      </p>
+
+      <p>
+        <strong>Quantity:</strong>
+        <%= @miscellaneou.qty %>
+      </p>
+
+      <p>
+        <strong>Price:</strong>
+        <%= @miscellaneou.price %>
+      </p>
+
+      <p>
+        <strong>Due:</strong>
+        <%= @miscellaneou.due.name %>
+      </p>
+
+      <%= link_to 'Back to Accessories', miscellaneou_path, :class => "btn btn-success" %>
+    </div>
+
+    <div class="col-md-5">
+
+      <p>
+        <%= image_tag @barrel.image.url(:medium) %>
+      </p>
+
+    </div>
+
+    <%= render 'layouts/sidebar' %>
+    
+  </div>
+

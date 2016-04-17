@@ -3,17 +3,18 @@
   <div class="col-md-12">
     <p id="notice"><%= notice %></p>
 
-    <h1>Listing Miscellaneous</h1>
+    <h1>Listing Accessories</h1>
 
     <table class="table table-hover table-condensed">
       <thead>
       <tr>
         <th>Name</th>
         <th>Model</th>
-        <th>Details</th>
-        <th>Active</th>
-        <th>Due</th>
         <th>Make</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Due</th>
+        <th>Active</th>
         <th colspan="3"></th>
       </tr>
       </thead>
@@ -23,10 +24,11 @@
           <tr>
             <td><%= miscellaneou.name %></td>
             <td><%= miscellaneou.model %></td>
-            <td><%= miscellaneou.details %></td>
-            <td><%= miscellaneou.active %></td>
-            <td><%= miscellaneou.due %></td>
             <td><%= miscellaneou.make %></td>
+            <td><%= miscellaneou.qty %></td>
+            <td><%= number_to_currency(miscellaneou.price) %></td>
+            <td><%= miscellaneou.due %></td>
+            <td><%= miscellaneou.active %></td>
             <td><%= link_to 'Show', miscellaneou %></td>
             <td><%= link_to 'Edit', edit_miscellaneou_path(miscellaneou) %></td>
             <td><%= link_to 'Destroy', miscellaneou, method: :delete, data: {confirm: 'Are you sure?'} %></td>
@@ -37,7 +39,7 @@
 
     <br>
 
-    <%= link_to 'New Miscellaneou', new_miscellaneou_path %>
+    <%= link_to 'New Accessory', new_miscellaneou_path %>
 
   </div>
 </div>
