@@ -12,9 +12,10 @@
         <tr>
           <th>Name</th>
           <th>Model</th>
+          <th>Make</th>
+          <th>Price</th>
           <th>Active</th>
           <th>Due</th>
-          <th>Make</th>
           <th colspan="3"></th>
         </tr>
         </thead>
@@ -23,10 +24,11 @@
         <% @triggers.each do |trigger| %>
             <tr>
               <td><%= trigger.name %></td>
-              <td><%= trigger.make.name %></td>
               <td><%= trigger.model %></td>
-              <td><%= trigger.active %></td>
+              <td><%= trigger.make.name %></td>
+              <td><%= number_to_currency(trigger.price) %></td>
               <td><%= trigger.due.name %></td>
+              <td><%= trigger.active %></td>
               <td><%= image_tag trigger.image.url(:thumb) %></td>
               <td><%= link_to 'Show', trigger, :class => "btn btn-small btn-info" %></td>
               <td><%= link_to 'Edit', edit_trigger_path(trigger), :class => "btn btn-small btn-success" %></td>

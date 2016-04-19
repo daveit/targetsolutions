@@ -1,34 +1,78 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @archery.name %>
-</p>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        <strong>
+          <%= @barrel.name %>
+        </strong>
+      </h2>
+    </div>
+  </div>
+  <hr>
 
-<p>
-  <strong>Model:</strong>
-  <%= @archery.model %>
-</p>
+  <div class="row">
+    <div class="col-md-5">
 
-<p>
-  <strong>Details:</strong>
-  <%= @archery.details %>
-</p>
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Active:</strong>
-  <%= @archery.active %>
-</p>
+      <p>
+        <strong>Name:</strong>
+        <%= @archery.name %>
+      </p>
 
-<p>
-  <strong>Due:</strong>
-  <%= @archery.due %>
-</p>
+      <p>
+        <strong>Model:</strong>
+        <%= @archery.model %>
+      </p>
 
-<p>
-  <strong>Make:</strong>
-  <%= @archery.make %>
-</p>
+      <p>
+        <strong>Make:</strong>
+        <%= @archery.make %>
+      </p>
 
-<%= link_to 'Edit', edit_archery_path(@archery) %> |
-<%= link_to 'Back', archeries_path %>
+      <p>
+        <strong>Details:</strong>
+        <%= @archery.details %>
+      </p>
+
+      <p>
+        <strong>Size:</strong>
+        <%= @archery.size %>
+      </p>
+      <p>
+        <strong>Quantity:</strong>
+        <%= @archery.qty %>
+      </p>
+      <p>
+        <strong>Price:</strong>
+        <%= number_to_currency(@archery.price) %>
+      </p>
+
+      <p>
+        <strong>Active:</strong>
+        <%= @archery.active %>
+      </p>
+
+      <p>
+        <strong>Due:</strong>
+        <%= @archery.due %>
+      </p>
+
+
+      <%= link_to 'Edit', edit_archery_path(@archery) %> |
+      <%= link_to 'Back', archeries_path %>
+
+    </div>
+
+    <div class="col-md-5">
+
+      <p>
+        <%= image_tag @barrel.image.url(:medium) %>
+      </p>
+
+    </div>
+
+    <%= render 'layouts/sidebar' %>
+
+  </div>

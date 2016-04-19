@@ -69,6 +69,6 @@ class PrelovedsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def preloved_params
-      params.require(:preloved).permit(:name, :model, :price, :details, :active, :make_id)
+      params.require(:preloved).permit(:name, :model, :price, :details, :active, :make_id, :image)
     end
 end

@@ -11,10 +11,10 @@
         <tr>
           <th>Name</th>
           <th>Model</th>
-          <th>Active</th>
-          <th>Due</th>
           <th>Make</th>
-          <th>Image</th>
+          <th>Price</th>
+          <th>Due</th>
+          <th>Active</th>
           <th colspan="3"></th>
         </tr>
         </thead>
@@ -24,9 +24,10 @@
             <tr>
               <td><%= archery.name %></td>
               <td><%= archery.model %></td>
+              <td><%= archery.make.name %></td>
+              <td><%= number_to_currency(archery.price) %></td>
               <td><%= archery.active %></td>
-              <td><%= archery.due %></td>
-              <td><%= archery.make %></td>
+              <td><%= archery.due.name %></td>
               <td><%= image_tag archery.image.url(:thumb) %></td>
               <td><%= link_to 'Show', archery, :class => "btn btn-small btn-info" %></td>
               <td><%= link_to 'Edit', edit_archery_path(archery), :class => "btn btn-small btn-success" %></td>

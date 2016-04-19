@@ -69,6 +69,6 @@ class ArcheriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def archery_params
-      params.require(:archery).permit(:name, :model, :details, :active, :due_id, :make_id, :image)
+      params.require(:archery).permit(:name, :model, :details, :active, :due_id, :make_id, :image, :size, :qty, :price)
     end
 end
