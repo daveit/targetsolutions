@@ -29,7 +29,6 @@
               <td><%= number_to_currency(trigger.price) %></td>
               <td><%= trigger.due.name %></td>
               <td><%= trigger.active %></td>
-              <td><%= image_tag trigger.image.url(:thumb) %></td>
               <td><%= link_to 'Show', trigger, :class => "btn btn-small btn-info" %></td>
               <td><%= link_to 'Edit', edit_trigger_path(trigger), :class => "btn btn-small btn-success" %></td>
               <td><%= link_to 'Destroy', trigger, method: :delete, data: {confirm: 'Are you sure?'}, :class => "btn btn-small btn-danger" %></td>
