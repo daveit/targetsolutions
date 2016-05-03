@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :static_pages
+  resources :webpages
   resources :preloveds
   resources :reloadings
   resources :miscellaneous

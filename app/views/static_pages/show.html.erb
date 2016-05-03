@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>
+        <strong>
+          <%= @static_page.name %>
+        </strong>
+      </h2>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-5">
+
+      <p id="notice"><%= notice %></p>
+
+      <p>
+        <strong>Shortcode:</strong>
+        <%= @static_page.shortcode %>
+      </p>
+
+      <p>
+        <strong>Body:</strong>
+        <%= @static_page.body %>
+      </p>
+
+      <p>
+        <strong>Left on?</strong>
+        <%= @static_page.lefton %>
+      </p>
+
+      <p>
+        <strong>Left:</strong>
+        <%= @static_page.left %>
+      </p>
+
+      <p>
+        <strong>Right On?</strong>
+        <%= @static_page.righton %>
+      </p>
+
+      <p>
+        <strong>Right:</strong>
+        <%= @static_page.right %>
+      </p>
+
+      <%= link_to 'Edit', edit_static_page_path(@static_page) %> |
+      <%= link_to 'Back', static_pages_path %>
+
+    </div>
+
+    <div class="col-md-5">
+    </div
+
+    <%= render 'layouts/sidebar' %>
+
+  </div>
+</div>

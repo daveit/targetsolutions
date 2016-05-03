@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160416101001) do
+ActiveRecord::Schema.define(version: 20160503050201) do
 
   create_table "archeries", force: :cascade do |t|
     t.string   "name"
@@ -186,6 +186,18 @@ ActiveRecord::Schema.define(version: 20160416101001) do
 
   add_index "rifles", ["due_id"], name: "index_rifles_on_due_id"
 
+  create_table "static_pages", force: :cascade do |t|
+    t.string   "name"
+    t.string   "shortcode"
+    t.text     "body"
+    t.text     "left"
+    t.text     "right"
+    t.boolean  "lefton"
+    t.boolean  "righton"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "stocks", force: :cascade do |t|
     t.string   "name"
     t.string   "model"
@@ -247,6 +259,15 @@ ActiveRecord::Schema.define(version: 20160416101001) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "webpages", force: :cascade do |t|
+    t.string   "name"
+    t.text     "pagemd"
+    t.boolean  "sidebar"
+    t.text     "sidebarmd"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "when_dues", force: :cascade do |t|
     t.string   "name"
