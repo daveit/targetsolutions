@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   resources :static_pages
   resources :webpages
   resources :preloveds
