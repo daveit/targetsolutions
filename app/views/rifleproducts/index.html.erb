@@ -1,28 +1,42 @@
 <div class="container">
   <div class="row">
     <div class="col-md-10">
+      <h2>Our range of Rifles and Actions</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Make</th>
+          <th>Model</th>
+          <th>Style</th>
+          <th>Calibre</th>
+          <th>Price</th>
+          <th>Due</th>
+          <th colspan="1"></th>
+        </tr>
+        </thead>
 
-      <section class="search-results">
-        <header>
-          <h2>Rifles & Actions</h2>
-        </header>
-        <ol class="list-group">
-          <% @rifles.each do |rifle| %>
-              <li class="list-group-item clearfix">
-                <h3 class="pull-right"><small>Model: </small><small class="text-uppercase"><%= rifle.model %></small></h3>
-                <h2 class="h2"><%= link_to rifle.name, rifle %><small> (<%= rifle.make.name %>)</small></h2>
-                <h3 class="pull-right"><small>Calibre </small><small class="text-uppercase"><%= rifle.bore %></small></h3>
-                <!--<h3 class="pull-right"><small>Price </small><small class="text-uppercase"><%= number_to_currency(rifle.price) %></small></h3>-->
-                <h4 class="h3">Due: <%= rifle.due.name %></h4>
-                <p><%= link_to 'Full Details', rifle, :class => "btn btn-sm btn-default" %></p>
-              </li>
-          <% end %>
-        </ol>
-      </section>
+        <tbody>
+        <% @rifles.each do |rifle| %>
+            <tr>
+              <td><%= link_to rifle.name, rifle %></td>
+              <td><%= rifle.make.name %></td>
+              <td><%= rifle.model %></td>
+              <td><%= rifle.style %></td>
+              <td><%= rifle.bore %></td>
+              <td><%= number_to_currency(rifle.price) %></td>
+              <td><%= rifle.due.name %></td>
+              <td><%= link_to 'Full Details', rifle, :class => "btn btn-small btn-success" %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
 
     </div>
 
-    <%= render 'layouts/sidebar' %>
+    <div class="col-md-2">
+      <%= render 'layouts/sidebar' %>
+    </div>
 
   </div>
 </div>

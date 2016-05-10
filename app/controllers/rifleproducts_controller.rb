@@ -1,7 +1,9 @@
 class RifleproductsController < ApplicationController
+
   def index
-    @rifles = Rifle.all
+    @rifles = Rifle.where(active: true)
   end
+
   def show
 
   end
