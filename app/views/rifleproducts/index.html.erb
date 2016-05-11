@@ -10,7 +10,7 @@
           <th>Model</th>
           <th>Style</th>
           <th>Calibre</th>
-          <th>Price</th>
+          <th class="ar">Price</th>
           <th>Due</th>
           <th colspan="1"></th>
         </tr>
@@ -24,9 +24,9 @@
               <td><%= rifle.model %></td>
               <td><%= rifle.style %></td>
               <td><%= rifle.bore %></td>
-              <td><%= number_to_currency(rifle.price) %></td>
+              <td class="ar"><%= number_to_currency(rifle.price) %></td>
               <td><%= rifle.due.name %></td>
-              <td><%= link_to 'Full Details', rifle, :class => "btn btn-small btn-success" %></td>
+              <td><%= link_to 'View', rifle, :class => "btn btn-small btn-success" %></td>
             </tr>
         <% end %>
         </tbody>
