@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :rifleproducts
+  resources :barrelproducts
+  resources :opticsproducts
   resources :photos
   resources :static_pages
   resources :webpages
@@ -10,10 +13,7 @@ Rails.application.routes.draw do
   resources :stocks
   resources :optics
   resources :barrels
-  resources :rifleproducts
 
-  resources :riflesv
-  #get 'riflesv', to: riflesv#index
   resources :dues
   resources :rifles
   resources :when_dues

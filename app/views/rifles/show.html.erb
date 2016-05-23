@@ -23,10 +23,9 @@
       </p>
 
       <p>
-        <strong>Availability:</strong>
-        <%= @rifle.due.name %>
+        <strong>Style:</strong>
+        <%= @rifle.style %>
       </p>
-
       <p>
         <strong>Calibre:</strong>
         <%= @rifle.bore %>
@@ -37,20 +36,27 @@
         <%= number_to_currency(@rifle.price) %>
       </p>
 
+
       <p>
-        <%= @details.html_safe %>
+        <strong>Availability:</strong>
+        <%= @rifle.due.name %>
+      </p>
+      <hr>
+      <p>
+        <%= markdown(@rifle.details) %>
       </p>
 
-
+      <hr>
       <%= link_to 'Back to Rifles and Actions', rifleproducts_path, :class => "btn btn-success" %>
 
     </div>
 
     <div class="col-md-5">
-      <p><%= image_tag @rifle.image.url(:medium) %></p>
+      <p><%#= image_tag @rifle.image.url(:medium) %></p>
     </div
-
-    <%= render 'layouts/sidebar' %>
+    <div class="col-md-2">
+      <%= render 'layouts/sidebar' %>
+    </div>
 
   </div>
 </div>

@@ -17,11 +17,6 @@
       <p id="notice"><%= notice %></p>
 
       <p>
-        <strong>Name:</strong>
-        <%= @barrel.name %>
-      </p>
-
-      <p>
         <strong>Model:</strong>
         <%= @barrel.model %>
       </p>
@@ -30,10 +25,9 @@
         <strong>Make:</strong>
         <%= @barrel.make.name %>
       </p>
-
       <p>
-        <strong>Details:</strong>
-        <%= @details.html_safe %>
+        <strong>Bore:</strong>
+        <%= @barrel.bore %>
       </p>
 
       <p>
@@ -41,10 +35,28 @@
         <%= @barrel.twist %>
       </p>
 
+
+      <p>
+        <strong>Profile:</strong>
+        <%= @barrel.profile %>
+      </p>
+
+
+      <p>
+        <strong>Material:</strong>
+        <%= @barrel.material %>
+      </p>
+
       <p>
         <strong>Due:</strong>
         <%= @barrel.due.name %>
       </p>
+      <hr>
+      <p>
+        <strong>Details:</strong>
+        <%= @details.html_safe %>
+      </p>
+      <hr>
 
       <%= link_to 'Back to Barrels', barrels_path, :class => "btn btn-success" %>
     </div>
@@ -56,7 +68,8 @@
       </p>
 
     </div>
-
-    <%= render 'layouts/sidebar' %>
+    <div class="col-md-2">
+      <%= render 'layouts/sidebar' %>
+    </div>
 
 </div>

@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h2>Our range of Barrels</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Make</th>
+          <th>Bore</th>
+          <th>Twist</th>
+          <th>Profile</th>
+          <th>Material</th>
+          <th class="ar">Quantity</th>
+          <th class="ar">Price</th>
+          <th>Due</th>
+          <th colspan="1"></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @barrels.each do |barrel| %>
+            <tr>
+              <td><%= link_to barrel.name, barrel %></td>
+              <td><%= barrel.make.name %></td>
+              <td><%= barrel.bore %></td>
+              <td><%= barrel.twist %></td>
+              <td><%= barrel.profile %></td>
+              <td><%= barrel.material %></td>
+              <td class="ar"><%= (barrel.qty) %></td>
+              <td class="ar"><%= number_to_currency(barrel.price) %></td>
+              <td><%= barrel.due.name %></td>
+              <td><%= link_to 'View', barrel, :class => "btn btn-small btn-success" %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="col-md-2">
+      <%= render 'layouts/sidebar' %>
+    </div>
+
+  </div>
+</div>

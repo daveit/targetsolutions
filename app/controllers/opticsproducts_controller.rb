@@ -1,0 +1,2 @@
+class OpticsproductsController < ApplicationController
+end

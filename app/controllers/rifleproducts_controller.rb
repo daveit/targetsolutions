@@ -7,4 +7,5 @@ class RifleproductsController < ApplicationController
   def show
 
   end
+
 end
