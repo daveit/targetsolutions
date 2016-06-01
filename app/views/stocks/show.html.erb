@@ -18,6 +18,11 @@
       <p id="notice"><%= notice %></p>
 
       <p>
+        <strong>Make:</strong>
+        <%= @stock.make.name %>
+      </p>
+
+      <p>
         <strong>Model:</strong>
         <%= @stock.model %>
       </p>
@@ -35,27 +40,16 @@
       </p>
 
       <p>
-        <strong>Details:</strong>
-        <%= @stock.details %>
-      </p>
-
-      <p>
-        <strong>Active:</strong>
-        <%= @stock.active %>
-      </p>
-
-      <p>
-        <strong>Due:</strong>
+        <strong>Availability:</strong>
         <%= @stock.due.name %>
       </p>
-
+      <hr>
       <p>
-        <strong>Make:</strong>
-        <%= @stock.make.name %>
+        <strong>Details:</strong><br>
+        <%= @stock.details %>
       </p>
-
-      <%= link_to 'Edit', edit_stock_path(@stock) %> |
-      <%= link_to 'Back', stocks_path %>
+      <hr>
+      <%= link_to 'Back', stocks_path, :class => "btn btn-success" %>
     </div>
 
     <div class="col-md-5">

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :stocksproducts
   resources :rifleproducts
   resources :barrelproducts
   resources :opticsproducts

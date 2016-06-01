@@ -17,9 +17,20 @@
     <div class="col-md-5">
 
       <p id="notice"><%= notice %></p>
+
       <p>
         <strong>Model:</strong>
         <%= @optic.model %>
+      </p>
+
+      <p>
+        <strong>Make:</strong>
+        <%= @optic.make.name %>
+      </p>
+
+      <p>
+        <strong>Mag:</strong>
+        <%= @optic.mag %>
       </p>
 
       <p>
@@ -28,19 +39,10 @@
       </p>
 
       <p>
-        <strong>Active:</strong>
-        <%= @optic.active %>
-      </p>
-
-      <p>
         <strong>Due:</strong>
         <%= @optic.due.name %>
       </p>
 
-      <p>
-        <strong>Make:</strong>
-        <%= @optic.make.name %>
-      </p>
       <%= link_to 'Back', optics_path %>
 
     </div>

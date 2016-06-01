@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h2>Our range of Stocks</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Model</th>
+          <th>Make</th>
+          <th>Inlet</th>
+          <th>Colour</th>
+          <th class="ar">Price</th>
+          <th>Due</th>
+          <th colspan="1"></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @stocks.each do |stock| %>
+            <tr>
+              <td><%= link_to stock.name, stock %></td>
+              <td><%= stock.model %></td>
+              <td><%= stock.make.name %></td>
+              <td><%= stock.inlet %></td>
+              <td><%= stock.colour %></td>
+              <td class="ar"><%= number_to_currency(stock.price) %></td>
+              <td><%= stock.due.name %></td>
+              <td><%= link_to 'View', stock, :class => "btn btn-small btn-success" %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="col-md-2">
+      <%= render 'layouts/sidebar' %>
+    </div>
+
+  </div>
+</div>

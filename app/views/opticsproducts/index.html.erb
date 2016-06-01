@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h2>Our range of Optics</h2>
+      <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Model</th>
+          <th>Make</th>
+          <th>Mag</th>
+          <th class="ar">Price</th>
+          <th>Due</th>
+          <th colspan="1"></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @optics.each do |optic| %>
+            <tr>
+              <td><%= link_to optic.name, optic %></td>
+              <td><%= optic.model %></td>
+              <td><%= optic.make.name %></td>
+              <td><%= optic.mag %></td>
+              <td class="ar"><%= number_to_currency(optic.price) %></td>
+              <td><%= optic.due.name %></td>
+              <td><%= link_to 'View', optic, :class => "btn btn-small btn-success" %></td>
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="col-md-2">
+      <%= render 'layouts/sidebar' %>
+    </div>
+
+  </div>
+</div>

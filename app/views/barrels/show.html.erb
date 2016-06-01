@@ -17,11 +17,6 @@
       <p id="notice"><%= notice %></p>
 
       <p>
-        <strong>Model:</strong>
-        <%= @barrel.model %>
-      </p>
-
-      <p>
         <strong>Make:</strong>
         <%= @barrel.make.name %>
       </p>
@@ -46,6 +41,14 @@
         <strong>Material:</strong>
         <%= @barrel.material %>
       </p>
+      <p>
+        <strong>Price:</strong>
+        <%= @barrel.price %>
+      </p>
+      <p>
+        <strong>Quantity Available:</strong>
+        <%= @barrel.qty %>
+      </p>
 
       <p>
         <strong>Due:</strong>
@@ -54,7 +57,7 @@
       <hr>
       <p>
         <strong>Details:</strong>
-        <%= @details.html_safe %>
+        <%= markdown(@barrel.details) %>
       </p>
       <hr>
 
@@ -72,4 +75,4 @@
       <%= render 'layouts/sidebar' %>
     </div>
 
-</div>
+  </div>
